@@ -1,0 +1,11 @@
+{
+  "schema_version": 2,
+  "reserved_cloud_service_ports": [],
+  "confirmed_historical_cloud_ports": [],
+  "tutorial_example_ports_to_avoid_if_possible": [],
+  "historical_local_client_ports": [],
+  "node_groups": [],
+  "notes": [
+    "空模板。实际历史端口只保存在使用者本地私密记录中，不提交到公开仓库。"
+  ]
+}

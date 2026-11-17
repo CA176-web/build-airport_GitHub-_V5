@@ -1,0 +1,7 @@
+interface:
+  display_name: "build airport V1.3"
+  short_description: "按预算部署或修复 VLESS、HY2 节点，避让端口并实测交付导入链接"
+  default_prompt: "使用 $build-airport，按我本次指定的实例或地区、预算和协议执行部署或修复，避开历史端口，实测连接后交付完整链接与 TXT；仅安装或更新技能时不执行部署。"
+
+policy:
+  allow_implicit_invocation: false
