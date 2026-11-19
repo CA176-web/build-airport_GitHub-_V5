@@ -1,6 +1,6 @@
 # Task secrets and generated local state
-/private/
-/backups/
+**/private/
+**/backups/
 .env
 .env.*
 *.log
