@@ -41,6 +41,10 @@ openssl x509 -in /etc/hysteria/server.crt -noout -fingerprint -sha256
 
 重签或更换证书后必须重新生成链接。尽量从实际公共证书文件计算，不抄截图。必须通过终端转录时按短行分组核对，并以客户端握手验证最终值；遇到指纹错误不能删除指纹来“修好”。相关字段见 [官方客户端配置](https://v2.hysteria.network/docs/advanced/Full-Client-Config/)。
 
+证书续期和服务加载按 [maintenance.md](maintenance.md) 核验。原生 Hysteria 读取证书的行为与面板打包的其他核心可能不同；不将“自动续期成功”当成运行中的新连接已经使用新证书。
+
+核对目标客户端导入后确实保留并执行固定指纹验证。若客户端丢弃 `pinSHA256`，不能交付成仅 `insecure=1` 的配置；改用该客户端支持的受信任证书/自定义 CA 或兼容的客户端方案，再重新验收。
+
 ## 3. 服务与资源
 
 按 PID 1 选服务管理器。systemd 环境可采用以下单元；先创建账号和配置目录，再启用。Alpine/OpenRC 使用对应服务脚本，不直接运行 systemctl。

@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "reserved_cloud_service_ports": [],
+  "confirmed_historical_cloud_ports": [],
+  "tutorial_example_ports_to_avoid_if_possible": [],
+  "historical_local_client_ports": [],
+  "node_groups": [],
+  "notes": [
+    "公开包不携带使用者的历史端口。安装升级前合并本机旧记录，不用空模板覆盖。",
+    "新选代理与 SSH 的内部/外部端口按用户要求避让整个历史集合，并核对平台协议和实际占用。",
+    "只持久保存端口数字；不要在本文件写入账号、IP、凭据或私钥。"
+  ]
+}

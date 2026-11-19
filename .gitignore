@@ -1,0 +1,9 @@
+# Task secrets and generated local state
+/private/
+/backups/
+.env
+.env.*
+*.log
+**/__pycache__/
+*.pyc
+**/port-exclusions_V*.json

@@ -1,6 +1,6 @@
 # 每位使用者自己的端口记录
 
-公开仓库只包含 [port-exclusions.example.json](port-exclusions.example.json) 空模板。真实历史记录使用本机 `private/port-exclusions.local.json`（相对已安装的 build-airport 技能目录），或用户明确指定的私密文件；不要提交到 GitHub。
+V7 的 [port-exclusions.json](port-exclusions.json) 和兼容旧版的 [port-exclusions.example.json](port-exclusions.example.json) 都是空模板。实际历史留在使用者本机；已经使用 `private/port-exclusions.local.json` 或用户指定私密文件时继续使用该位置，不另建互相分离的历史集合。首次部署可在已安装技能中记录端口数字，但发布时必须恢复公开空模板；不要将本机记录提交到 GitHub。
 
 ## 首次使用与迁移
 
