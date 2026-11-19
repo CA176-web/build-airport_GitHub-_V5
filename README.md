@@ -21,18 +21,18 @@ Codex 手动调用技能：选购、部署与维护个人 VLESS/REALITY、Hyster
 
 ### 从 GitHub 安装
 
-**技能目录：** [build-airport](https://github.com/yangchen461/build-airport_GitHub-_V5/tree/main/build-airport)
+**技能目录：** [build-airport](https://github.com/CA176-web/build-airport_GitHub-_V5/tree/main/build-airport)
 
 把下面这段发给 Codex：
 
-> 请使用 skill-installer 从 https://github.com/yangchen461/build-airport_GitHub-_V5/tree/main/build-airport 安装 build-airport V1.4（V7）。本次只安装技能，不登录云平台、不购买 VPS、不部署或重装节点。若已安装，先备份旧版，保留并合并本机端口避让记录，再更新，保持仅手动调用。
+> 请使用 skill-installer 从 https://github.com/CA176-web/build-airport_GitHub-_V5/tree/main/build-airport 安装 build-airport V1.4（V7）。本次只安装技能，不登录云平台、不购买 VPS、不部署或重装节点。若已安装，先备份旧版，保留并合并本机端口避让记录，再更新，保持仅手动调用。
 
 安装后在下一轮对话使用 `$build-airport`。代码位于仓库的 `build-airport/` 目录；仓库名称中的 `_V5` 是原仓库名，当前内容版本为 V7 / 1.4。
 
 已安装 skill-installer 的环境也可调用其脚本：
 
 ```text
-python <skill-installer目录>/scripts/install-skill-from-github.py --repo yangchen461/build-airport_GitHub-_V5 --ref main --path build-airport
+python <skill-installer目录>/scripts/install-skill-from-github.py --repo CA176-web/build-airport_GitHub-_V5 --ref main --path build-airport
 ```
 
 脚本位置按当前环境确定。已有同名安装时先按下方升级说明处理，不能用公开空模板覆盖个人端口历史。只安装技能不会执行任何部署。
@@ -73,3 +73,4 @@ python -m unittest discover -s build-airport/scripts/tests -p "test_*.py"
 ```
 
 `SHA256SUMS.txt` 列出包内文件摘要。脚本测试通过只说明离线生成行为已验证，不表示购买、部署或任意公网节点已经通过测试。
+
